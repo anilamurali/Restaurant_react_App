@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@700&family=Bebas+Neue&family=Courgette&family=Kaisei+HarunoUmi&family=Lato&family=Libre+Baskerville&display=swap');
+body {
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}

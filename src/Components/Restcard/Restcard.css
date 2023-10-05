@@ -1,0 +1,13 @@
+.card{
+    margin: 15px;
+    padding: 10xp;
+   
+}
+.card:hover{
+    box-shadow: 4px 4px 3px 4px rgb(215, 214, 214);
+    color: white;
+    background: rgba(51, 51, 51, 0.59);
+}
+.image{
+    height: 350px;
+}
