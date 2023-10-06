@@ -5,6 +5,8 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import ListGroup from 'react-bootstrap/ListGroup';
 import '../Viewrest/Viewrest.css'
+import Restop from '../Restop/Restop';
+import Restreview from '../Restreview/Restreview';
 
 
 function Viewrest() {
@@ -39,10 +41,13 @@ function Viewrest() {
         </Col>
         <Col sm={12} md={6} lg={7} xl={7} className='list'>
         <ListGroup style={{width:'460px',margin:'10px',border:'1px solid grey'}}>
-      <ListGroup.Item  style={{border:'1px solid grey'}}>{RestDetails.name}</ListGroup.Item>
-      <ListGroup.Item style={{border:'1px solid grey'}}>{RestDetails.neighborhood}</ListGroup.Item>
-      <ListGroup.Item style={{border:'1px solid grey'}}>{RestDetails.address}</ListGroup.Item>
-      <ListGroup.Item style={{border:'1px solid grey'}}>{RestDetails.cuisine_type}</ListGroup.Item>
+      <ListGroup.Item  style={{border:'1px solid grey'}}>Name:{RestDetails.name}</ListGroup.Item>
+      <ListGroup.Item style={{border:'1px solid grey'}}>Neighborhood:{RestDetails.neighborhood}</ListGroup.Item>
+      <ListGroup.Item style={{border:'1px solid grey'}}>Address:{RestDetails.address}</ListGroup.Item>
+      <ListGroup.Item style={{border:'1px solid grey'}}>Cuisine type:{RestDetails.cuisine_type}</ListGroup.Item>
+      <ListGroup.Item style={{border:'1px solid grey'}}><Restop op={RestDetails.operating_hours}/></ListGroup.Item>
+      <ListGroup.Item style={{border:'1px solid grey'}}><Restreview review={RestDetails.reviews}/></ListGroup.Item>
+
     </ListGroup>
         </Col>
       </Row>

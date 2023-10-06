@@ -11,7 +11,7 @@ function Restcard({restorents}) {
         {
            <Link to={`/view/${restorents.id}`} style={{textDecoration:'none'}}>
             <Card  className='card'>
-            <Card.Img className='image' variant="top" src={restorents.photograph} />
+            <Card.Img className='image' variant="top" src={restorents.photograph}  />
             <Card.Body>
               <Card.Title>{restorents.name}</Card.Title>
               <Card.Text style={{height:'50px'}}>
